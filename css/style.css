@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+image {
+  object-fit: cover;
+  display: flex;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+}
+.container {
+  height: 100%;
+  display: flex;
+}
+.navigation {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  background-color: white;
+}
+
+main {
+  flex: 1;
+}
+.main-container {
+  margin: 0 auto;
+  max-width: 1130px;
+  width: 100%;
+  align-items: center;
+}
+.navigation__content {
+}
+.logo {
+  padding-top: 55px;
+  padding-left: 29px;
+  padding-bottom: 65px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  padding-right: 23px;
+}
+
+.nav-list li a {
+  padding-left: 41px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #717171;
+}
+.nav-list li a:hover {
+  stroke: #0b63f8;
+  color: #0b63f8;
+  border-left: 3px solid #0b63f8;
+}
+.nav-list:hover .dashboard-img path {
+  fill: #0b63f8;
+}
+svg {
+  opacity: 70%;
+}
+
+.nav-list li a:hover svg {
+  opacity: 100%;
+}
+.nav-list li a:hover svg path {
+  stroke: #0b63f8;
+}
+
+.help {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2%;
+  color: #717171;
+  padding-left: 41px;
+}
